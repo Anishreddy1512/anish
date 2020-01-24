@@ -4,8 +4,10 @@
         box-sizing: border-box;
     }
     body{
-        height: 100%;
-        background-color: #111;
+        margin: 10px auto;
+  min-width: 250px;
+  max-width: 50%;
+  background-color: #111;
 
     }
     h1{
@@ -52,51 +54,49 @@
 .addbutton:hover{
     opacity: 0.7;
 }
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 2rem;
+ul {
+  margin: 0;
+  padding: 0;
+  
+}
+ul li {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  margin: 0.25rem;
+  border-radius: 25px;
+  font-family: 'Flamenco', cursive;
     
+  
+
+/* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-.item{
-    padding: 0.5rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 3px solid #fff;
+/* Set zebra-stripes: all odd list items to a different color */
+ul li:nth-child(odd) {
+background: #f9f9f9;
 }
-.item-input{
-    background: none;
-    outline: none;
-    color: #fff;
-    border: none;
-    width: 350px;
-    font-size:1.4rem;
+ul li:hover {
+  background: #ddd;
 }
-.editbutton{
-    font-size: 1.4rem;
-    margin: 0 0.75rem;
-    font-family: 'Flamenco', cursive;
-    background: none;
-    outline: none;
-    color: lime;
-    border: none;
-    cursor: pointer;
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+  color:#fff;
 }
-.editbutton:hover{
-    opacity: 0.7;
+.close:hover {
+  background-color: crimson;
+  color: white;
 }
-.removebutton{
-    font-size: 1.4rem;
-    margin: 0 0.75rem;
-    font-family: 'Flamenco', cursive;
-    background: none;
-    outline: none;
-    color: red;
-    border: none;
-    cursor: pointer;
-}
-.removebutton:hover{
-    opacity: 0.7;
-}
+
